@@ -1,0 +1,2081 @@
+2021-08-12 00:45:37,098 - freqtrade.loggers - INFO - Verbosity set to 0
+2021-08-12 00:45:37,099 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2021-08-12 00:45:37,101 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2021-08-12 00:45:37,102 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2021-08-12 00:45:37,103 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2021-08-12 00:45:37,104 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2021-08-12 00:45:37,149 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2021-08-12 00:45:37,153 - freqtrade.configuration.directory_operations - INFO - Created data directory: None
+2021-08-12 00:45:37,154 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/bybit ...
+2021-08-12 00:45:37,155 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2021-08-12 00:45:37,161 - freqtrade.configuration.check_exchange - WARNING - Exchange "bybit" is known to the the ccxt library, available for the bot, but not officially supported by the Freqtrade development team. It may work flawlessly (please report back) or have serious issues. Use it at your own discretion.
+2021-08-12 00:45:37,162 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2021-08-12 00:45:37,164 - freqtrade.freqtradebot - INFO - Starting freqtrade 2021.7
+2021-08-12 00:45:37,187 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/freqtrade/user_data/strategies/sample_strategy.py'...
+2021-08-12 00:45:37,190 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2021-08-12 00:45:37,191 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2021-08-12 00:45:37,192 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_rsi = 30
+2021-08-12 00:45:37,193 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2021-08-12 00:45:37,194 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): sell_rsi = 70
+2021-08-12 00:45:37,195 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 5m.
+2021-08-12 00:45:37,196 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USD.
+2021-08-12 00:45:37,197 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 0.1.
+2021-08-12 00:45:37,198 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30, 'unit': 'minutes'}.
+2021-08-12 00:45:37,199 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2021-08-12 00:45:37,200 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2021-08-12 00:45:37,201 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2021-08-12 00:45:37,202 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2021-08-12 00:45:37,203 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2021-08-12 00:45:37,204 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2021-08-12 00:45:37,205 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2021-08-12 00:45:37,207 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2021-08-12 00:45:37,208 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2021-08-12 00:45:37,209 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2021-08-12 00:45:37,210 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USD
+2021-08-12 00:45:37,211 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 0.1
+2021-08-12 00:45:37,212 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2021-08-12 00:45:37,213 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2021-08-12 00:45:37,215 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30, 'unit': 'minutes'}
+2021-08-12 00:45:37,216 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2021-08-12 00:45:37,218 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: False
+2021-08-12 00:45:37,219 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2021-08-12 00:45:37,221 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_offset: 0.0
+2021-08-12 00:45:37,222 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2021-08-12 00:45:37,223 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2021-08-12 00:45:37,225 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2021-08-12 00:45:37,230 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2021-08-12 00:45:37,231 - freqtrade.exchange.exchange - INFO - Using CCXT 1.53.72
+2021-08-12 00:45:37,233 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2021-08-12 00:45:37,239 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2021-08-12 00:45:37,246 - freqtrade.exchange.exchange - INFO - Using Exchange "Bybit"
+2021-08-12 00:45:38,559 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Bybit'...
+2021-08-12 00:45:38,737 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 00:45:38,739 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2021-08-12 00:45:39,285 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2021-08-12 00:45:39,780 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 0.0.0.0:8080
+2021-08-12 00:45:39,782 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2021-08-12 00:45:39,783 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2021-08-12 00:45:39,785 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2021-08-12 00:45:39,802 - uvicorn.error - INFO - Started server process [1]
+2021-08-12 00:45:39,804 - uvicorn.error - INFO - Waiting for application startup.
+2021-08-12 00:45:39,806 - uvicorn.error - INFO - Application startup complete.
+2021-08-12 00:45:39,807 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2021-08-12 00:45:39,810 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2021-08-12 00:45:39,811 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2021-08-12 00:45:39,813 - freqtrade.worker - INFO - Changing state to: RUNNING
+2021-08-12 00:45:39,814 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2021-08-12 00:45:39,815 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `bybit`\n*Stake per trade:* `0.1 USD`\n*Minimum ROI:* `{'60': 0.01, '30': 0.02, '0': 0.04}`\n*Stoploss:* `-0.1`\n*Timeframe:* `5m`\n*Strategy:* `SampleStrategy`"}
+2021-08-12 00:45:39,817 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USD pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}]"}
+2021-08-12 00:45:44,805 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:46:44,845 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:47:44,887 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:48:44,931 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:49:44,972 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:50:45,014 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:51:45,045 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:52:45,086 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:53:45,127 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:54:45,175 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:55:45,210 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:56:45,227 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:57:45,260 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:58:45,308 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 00:59:45,340 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:00:45,381 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:01:45,413 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:02:45,449 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:03:45,500 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:04:45,531 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:05:45,553 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:06:45,605 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:07:45,633 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:08:45,682 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:09:45,725 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:10:45,776 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:11:45,807 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:12:45,863 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:13:45,906 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:14:45,957 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:15:46,036 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:16:46,115 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:17:46,191 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:18:46,256 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:19:46,333 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:20:46,411 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:21:46,456 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:22:46,489 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:23:46,531 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:24:46,569 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:25:46,614 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:26:46,646 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:27:46,685 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:28:46,733 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:29:46,774 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:30:46,823 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:31:46,868 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:32:46,918 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:33:46,961 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:34:47,025 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:35:47,078 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:36:47,168 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:37:47,227 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:38:47,314 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:39:47,378 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:40:47,441 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:41:47,512 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:42:47,586 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:43:47,656 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:44:47,748 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:45:42,813 - freqtrade.exchange.exchange - ERROR - Could not reload markets.
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/local/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/local/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 568, in fetch
+    response = self.session.request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 344, in reload_markets
+    self._markets = self._api.load_markets(reload=True)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 1363, in load_markets
+    markets = self.fetch_markets(params)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/bybit.py", line 410, in fetch_markets
+    response = self.v2PublicGetSymbols(params)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 462, in inner
+    return entry(_self, **inner_kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 487, in request
+    return self.fetch2(path, api, method, params, headers, body)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 483, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 620, in fetch
+    raise NetworkError(details) from e
+ccxt.base.errors.NetworkError: bybit GET https://api.bybit.com/v2/public/symbols
+2021-08-12 01:45:47,814 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:46:47,878 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:47:47,963 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:48:48,014 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:49:48,090 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:50:48,177 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:51:48,250 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:52:48,328 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:53:48,392 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:54:48,475 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:55:48,555 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:56:48,615 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:57:48,685 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:58:48,750 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 01:59:48,812 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:00:48,903 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:01:48,939 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:02:48,969 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:03:49,007 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:04:49,054 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:05:49,104 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:06:49,143 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:07:49,195 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:08:49,242 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:09:49,276 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:10:49,311 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:11:49,354 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:12:49,399 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:13:49,422 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:14:49,448 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:15:49,467 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:16:49,505 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:17:49,535 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:18:49,577 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:19:49,630 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:20:49,665 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:21:49,710 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:22:49,767 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:23:49,855 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:24:49,923 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:25:49,984 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:26:50,059 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:27:50,122 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:28:50,190 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:29:50,263 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:30:50,341 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:31:50,407 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:32:50,476 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:33:50,529 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:34:50,559 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:35:50,628 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:36:50,708 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:37:50,804 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:38:50,881 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:39:50,940 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:40:51,029 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:41:51,092 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:42:51,174 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:43:51,258 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:44:51,322 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:45:51,412 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:46:51,479 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:47:51,561 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:48:51,642 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:49:51,754 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:50:51,821 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:51:51,895 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:52:51,961 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:53:52,058 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:54:52,133 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:55:52,204 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:56:52,287 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:57:52,356 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:58:52,422 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 02:59:52,497 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:00:52,568 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:01:52,630 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:02:52,703 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:03:52,764 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:04:52,847 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:05:52,915 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:06:52,997 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:07:53,064 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:08:53,139 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:09:53,211 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:10:53,312 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:11:53,382 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:12:53,469 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:13:53,522 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:14:53,591 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:15:53,678 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:16:53,759 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:17:53,825 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:18:53,904 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:22:41,896 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:29:36,733 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:30:36,835 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:32:20,520 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:34:01,213 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:35:01,242 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:51:09,137 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:51:09,144 - freqtrade.exchange.exchange - ERROR - Could not reload markets.
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/local/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.9/http/client.py", line 277, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.9/socket.py", line 704, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/lib/python3.9/ssl.py", line 1241, in recv_into
+    return self.read(nbytes, buffer)
+  File "/usr/local/lib/python3.9/ssl.py", line 1099, in read
+    return self._sslobj.read(len, buffer)
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 568, in fetch
+    response = self.session.request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 344, in reload_markets
+    self._markets = self._api.load_markets(reload=True)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 1363, in load_markets
+    markets = self.fetch_markets(params)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/bybit.py", line 410, in fetch_markets
+    response = self.v2PublicGetSymbols(params)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 462, in inner
+    return entry(_self, **inner_kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 487, in request
+    return self.fetch2(path, api, method, params, headers, body)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 483, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 620, in fetch
+    raise NetworkError(details) from e
+ccxt.base.errors.NetworkError: bybit GET https://api.bybit.com/v2/public/symbols
+2021-08-12 03:52:09,166 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:53:09,181 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:54:09,188 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:55:09,190 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:56:09,208 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:57:09,210 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:58:09,228 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 03:59:09,245 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:00:09,255 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:01:09,267 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:02:09,274 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:03:09,287 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:04:09,306 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:05:09,322 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:06:09,349 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:07:09,397 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:08:09,431 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:09:09,469 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:10:09,504 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:11:09,546 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:12:09,589 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:13:09,638 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:14:09,784 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:15:09,816 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:16:09,855 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:17:09,884 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:18:09,938 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:19:10,018 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:20:10,039 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:21:10,071 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:22:10,122 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:23:10,140 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:24:10,177 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:25:10,210 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:26:10,254 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:27:10,276 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:28:10,305 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:29:10,349 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:30:10,363 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:31:10,399 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:32:10,445 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:33:10,458 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:34:15,437 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:35:15,467 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:36:15,504 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:37:15,534 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:38:15,584 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:39:15,623 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:40:15,700 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:41:15,735 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:42:15,778 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:43:15,816 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:44:15,881 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:45:15,917 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:46:15,927 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:47:15,961 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:48:15,964 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:49:15,971 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:50:15,985 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:51:15,997 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:52:15,997 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:53:16,018 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:54:16,042 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:55:16,053 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:56:16,086 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:57:16,117 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:58:16,138 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 04:59:16,162 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:00:16,170 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:01:16,201 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:02:16,236 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:03:16,298 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:04:16,345 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:05:06,686 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:05:06,942 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:05:11,465 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:05:11,724 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:05:16,406 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:05:16,478 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:05:16,683 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:05:21,486 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:05:21,703 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:05:26,495 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:05:26,707 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:05:31,501 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:05:31,718 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:05:36,472 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:05:36,684 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:05:41,482 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:05:41,830 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:05:46,494 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:05:46,703 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:05:51,491 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:05:51,698 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:05:56,508 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:05:56,727 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:06:01,511 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:06:01,722 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:06:06,490 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:06:06,806 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:06:11,499 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:06:11,708 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:06:16,441 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:06:16,515 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:06:16,730 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:06:21,524 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:06:21,772 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:06:26,539 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:06:26,748 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:06:31,536 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:06:31,823 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:06:36,504 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:06:36,712 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:06:41,524 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:06:41,835 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:06:46,534 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:06:46,742 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:06:51,548 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:06:51,757 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:06:56,562 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:06:56,769 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:07:01,569 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:07:01,789 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:07:06,546 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:07:06,774 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:07:11,559 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:07:11,765 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:07:16,499 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:07:16,569 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:07:16,810 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:07:21,576 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:07:21,802 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:07:26,583 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:07:26,791 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:07:31,598 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:07:31,807 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:07:36,570 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:07:36,783 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:07:41,577 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:07:41,942 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:07:46,587 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:07:46,863 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:07:51,589 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:07:51,800 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:07:56,599 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:07:56,810 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:08:01,609 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:08:01,820 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:08:06,689 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:08:06,898 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:08:11,691 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:08:11,935 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:08:16,638 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:08:16,715 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:08:16,963 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:08:21,706 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:08:21,974 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:08:26,728 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:08:26,932 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:08:31,732 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:08:31,947 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:08:36,713 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:08:37,020 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:08:41,734 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:08:41,947 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:08:46,734 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:08:46,946 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:08:51,729 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:08:51,936 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:08:56,738 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:08:56,941 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:09:01,753 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:09:01,962 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:09:06,738 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:09:06,949 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:09:11,750 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:09:11,993 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:09:16,692 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:09:16,757 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:09:16,967 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:09:21,762 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:09:21,968 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:09:26,778 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:09:26,985 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:09:31,794 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:09:32,005 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:09:36,766 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:09:36,978 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:09:41,776 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:09:41,984 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:09:46,779 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:09:46,994 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:09:51,784 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:09:52,102 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:09:56,795 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:09:57,003 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:10:16,716 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:11:16,753 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:12:16,803 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:13:16,860 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:14:16,899 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:15:16,951 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:16:16,996 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:17:17,058 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:18:17,105 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:19:17,138 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:20:17,207 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:21:17,251 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:22:17,300 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:23:17,340 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:24:17,379 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:25:17,419 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:26:17,454 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:27:17,478 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:28:17,483 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:29:17,502 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:30:17,521 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:31:17,537 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:32:17,555 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:33:17,588 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:34:17,605 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:35:17,631 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:36:22,625 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:37:27,625 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:38:27,638 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:39:27,680 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:40:27,764 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:41:27,820 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:42:27,828 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:43:27,836 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:44:27,859 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:45:03,479 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:45:03,730 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:45:07,914 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:45:08,121 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:45:12,922 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:45:13,137 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:45:17,951 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:45:18,181 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:45:22,986 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:45:23,205 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:45:27,876 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:45:28,006 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:45:28,328 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:45:32,922 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:45:33,131 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:45:37,920 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:45:38,143 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:45:42,952 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:45:43,169 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:45:47,963 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:45:48,181 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:45:53,104 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:45:53,388 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:45:57,954 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:45:58,172 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:46:02,927 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:46:03,148 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:46:07,917 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:46:08,130 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:46:12,927 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:46:13,142 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:46:17,934 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:46:18,141 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:46:22,939 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:46:23,170 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:46:27,952 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:46:28,190 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:46:32,828 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:46:32,918 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:46:33,131 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:46:37,928 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:46:38,139 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:46:42,935 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:46:43,150 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:46:47,938 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:46:48,149 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:46:52,945 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:46:53,160 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:46:57,953 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:46:58,166 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:47:02,923 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:47:03,137 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:47:07,931 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:47:08,142 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:47:12,935 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:47:13,147 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:47:17,946 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:47:18,160 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:47:22,949 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:47:23,159 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:47:27,958 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:47:28,173 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:47:32,840 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:47:32,930 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:47:33,145 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:47:37,942 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:47:38,207 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:47:42,945 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:47:43,159 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:47:47,949 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:47:48,167 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:47:52,957 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:47:53,173 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:47:57,973 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:47:58,297 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:48:02,939 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:48:03,152 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:48:07,943 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:48:08,155 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:48:12,953 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:48:13,164 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:48:17,959 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:48:18,211 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:48:22,967 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:48:23,279 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:48:27,980 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:48:28,209 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:48:32,860 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:48:32,953 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:48:33,169 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:48:37,961 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:48:38,181 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:48:42,963 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:48:43,237 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:48:47,970 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:48:48,184 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:48:52,970 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:48:53,194 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:48:57,981 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:48:58,195 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:49:02,946 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:49:03,158 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:49:07,952 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:49:08,170 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:49:12,969 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:49:13,183 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:49:17,970 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:49:18,228 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:49:22,986 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:49:23,211 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:49:27,986 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:49:28,202 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:49:32,868 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:49:32,959 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:49:33,174 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:49:37,966 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:49:38,180 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:49:42,970 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:49:43,181 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:49:47,986 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:49:48,197 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:49:52,993 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:49:53,210 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:49:58,004 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:49:58,215 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:50:32,885 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:51:32,892 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:52:32,902 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:53:32,923 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:54:32,949 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:55:03,350 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:03,636 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:03,654 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:03,878 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:08,034 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:08,244 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:08,258 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:08,505 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:13,044 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:13,254 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:13,269 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:13,494 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:18,053 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:18,269 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:18,285 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:18,603 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:23,059 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:23,318 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:23,337 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:23,626 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:28,070 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:28,345 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:28,361 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:28,651 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:32,957 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:55:33,044 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:33,336 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:33,354 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:33,639 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:38,031 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:38,256 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:38,273 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:38,480 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:43,043 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:43,290 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:43,307 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:43,522 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:48,056 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:48,402 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:48,418 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:48,707 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:53,054 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:53,267 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:53,284 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:53,496 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:58,042 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:58,256 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:55:58,270 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:55:58,484 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:03,040 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:03,261 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:03,281 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:03,539 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:08,035 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:08,354 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:08,371 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:08,666 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:13,099 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:13,323 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:13,351 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:13,586 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:18,069 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:18,281 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:18,301 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:18,529 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:23,178 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:23,470 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:23,505 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:23,739 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:28,095 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:28,314 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:28,336 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:28,564 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:33,072 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:33,289 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:33,313 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:33,551 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:37,962 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:56:38,073 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:38,292 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:38,317 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:38,542 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:43,070 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:43,301 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:43,333 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:43,551 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:48,062 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:48,282 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:48,300 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:48,518 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:53,068 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:53,287 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:53,307 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:53,524 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:58,068 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:58,354 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:56:58,373 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:56:58,658 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:03,042 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:03,264 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:03,284 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:03,500 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:08,039 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:08,251 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:08,269 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:08,568 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:13,056 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:13,278 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:13,296 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:13,517 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:18,055 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:18,313 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:18,333 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:18,551 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:23,060 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:23,275 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:23,295 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:23,509 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:28,062 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:28,280 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:28,316 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:28,541 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:33,034 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:33,253 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:33,271 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:33,487 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:37,964 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:57:38,043 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:38,257 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:38,274 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:38,483 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:43,050 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:43,270 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:43,287 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:43,505 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:48,053 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:48,269 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:48,289 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:48,506 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:53,057 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:53,274 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:53,292 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:53,512 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:58,064 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:58,279 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:57:58,300 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:57:58,533 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:03,029 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:03,246 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:03,264 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:03,477 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:08,039 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:08,265 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:08,285 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:08,494 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:13,046 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:13,269 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:13,284 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:13,498 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:18,052 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:18,315 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:18,335 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:18,548 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:23,058 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:23,273 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:23,292 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:23,506 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:28,057 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:28,267 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:28,286 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:28,498 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:33,041 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:33,255 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:33,275 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:33,484 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:38,041 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:38,259 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:38,278 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:38,491 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:42,968 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:58:43,052 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:43,273 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:43,291 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:43,500 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:48,055 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:48,266 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:48,284 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:48,497 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:53,055 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:53,271 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:53,290 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:53,504 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:58,072 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:58,289 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:58:58,309 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:58:58,524 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:03,037 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:03,260 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:03,278 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:03,484 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:08,053 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:08,261 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:08,280 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:08,496 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:13,046 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:13,257 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:13,276 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:13,487 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:18,053 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:18,268 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:18,286 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:18,613 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:23,055 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:23,266 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:23,285 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:23,494 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:28,067 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:28,370 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:28,390 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:28,676 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:33,035 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:33,459 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:33,477 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:33,767 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:38,046 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:38,261 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:38,280 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:38,490 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:42,970 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 05:59:43,050 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:43,261 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:43,279 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:43,496 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:48,050 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:48,266 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:48,285 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:48,505 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:53,058 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:53,277 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:53,294 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:53,551 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:58,066 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:58,369 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 05:59:58,388 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 05:59:58,602 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:00:42,972 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:01:42,983 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:02:42,989 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:03:43,030 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:04:43,076 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:05:03,689 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:05:03,902 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:05:08,175 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:05:08,405 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:05:13,179 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:05:13,407 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:05:18,176 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:05:18,431 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:05:23,179 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:05:23,483 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:05:28,186 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:05:28,403 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:05:33,179 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:05:33,395 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:05:38,162 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:05:38,418 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:05:43,088 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:05:43,172 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:05:43,430 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:05:48,179 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:05:48,460 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:05:53,188 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:05:53,404 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:05:58,193 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:05:58,406 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:06:03,156 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:06:03,376 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:06:08,176 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:06:08,516 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:06:13,168 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:06:13,439 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:06:18,186 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:06:18,399 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:06:23,186 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:06:23,402 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:06:28,194 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:06:28,412 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:06:33,152 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:06:33,371 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:06:38,163 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:06:38,434 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:06:43,164 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:06:43,376 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:06:48,095 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:06:48,177 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:06:48,391 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:06:53,183 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:06:53,491 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:06:58,189 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:06:58,406 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:07:03,165 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:07:03,380 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:07:08,169 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:07:08,423 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:07:13,177 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:07:13,399 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:07:18,189 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:07:18,402 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:07:23,195 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:07:23,407 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:07:28,194 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:07:28,417 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:07:33,160 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:07:33,502 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:07:38,174 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:07:38,384 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:07:43,178 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:07:43,390 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:07:48,105 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:07:48,189 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:07:48,396 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:07:53,191 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:07:53,409 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:07:58,200 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:07:58,417 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:08:03,177 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:08:03,391 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:08:08,177 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:08:08,388 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:08:13,190 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:08:13,408 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:08:18,193 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:08:18,453 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:08:23,201 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:08:23,415 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:08:28,203 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:08:28,419 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:08:33,177 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:08:33,389 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:08:38,182 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:08:38,394 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:08:43,190 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:08:43,404 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:08:48,116 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:08:48,200 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:08:48,478 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:08:53,205 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:08:53,416 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:08:58,210 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:08:58,424 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:09:03,183 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:09:03,393 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:09:08,192 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:09:08,408 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:09:13,200 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:09:13,413 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:09:18,200 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:09:18,416 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:09:23,218 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:09:23,431 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:09:28,221 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:09:28,446 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:09:33,194 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:09:33,411 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:09:38,200 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:09:38,424 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:09:43,214 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:09:43,667 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:09:48,134 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:09:48,216 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:09:48,422 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:09:53,226 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:09:53,448 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:09:58,233 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:09:58,444 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:10:48,158 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:11:48,179 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:12:48,204 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:13:48,242 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:14:48,282 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:15:48,298 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:16:48,345 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:17:48,385 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:18:48,415 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:19:48,423 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:20:48,497 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:21:48,505 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:22:48,510 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:23:48,512 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:24:48,514 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:25:04,121 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:04,691 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:04,709 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:05,018 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:08,601 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:08,843 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:08,861 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:09,079 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:13,600 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:13,916 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:13,933 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:14,146 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:18,627 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:18,850 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:18,870 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:19,099 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:23,613 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:23,868 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:23,888 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:24,179 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:28,623 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:28,834 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:28,850 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:29,063 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:33,594 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:33,873 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:33,890 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:34,109 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:38,599 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:38,882 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:38,900 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:39,126 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:43,601 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:43,819 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:43,836 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:44,051 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:48,533 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:25:48,616 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:48,850 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:48,866 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:49,085 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:53,626 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:53,850 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:53,869 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:54,081 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:58,635 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:58,850 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:25:58,869 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:25:59,079 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:03,607 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:03,825 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:03,844 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:04,058 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:08,613 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:08,863 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:08,880 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:09,211 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:13,622 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:13,922 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:13,940 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:14,335 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:18,636 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:18,855 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:18,874 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:19,086 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:23,638 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:23,882 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:23,900 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:24,175 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:28,649 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:28,872 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:28,889 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:29,104 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:33,624 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:33,853 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:33,872 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:34,106 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:38,623 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:38,837 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:38,857 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:39,072 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:43,639 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:43,930 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:43,950 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:44,235 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:48,566 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:26:48,648 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:48,865 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:48,882 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:49,253 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:53,666 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:54,229 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:54,249 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:54,589 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:58,671 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:58,903 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:26:58,921 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:26:59,172 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:03,640 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:03,984 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:04,003 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:04,294 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:08,650 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:08,874 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:08,893 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:09,131 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:13,655 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:14,035 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:14,052 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:14,442 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:18,662 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:18,889 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:18,909 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:19,125 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:23,675 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:23,908 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:23,926 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:24,396 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:28,684 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:28,900 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:28,918 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:29,132 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:33,658 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:33,961 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:33,979 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:34,195 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:38,662 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:39,116 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:39,135 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:39,527 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:43,670 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:44,036 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:44,053 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:44,448 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:48,600 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:27:48,684 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:48,959 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:48,975 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:49,264 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:53,683 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:53,899 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:53,914 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:54,145 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:58,701 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:58,941 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:27:58,961 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:27:59,172 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:03,676 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:03,900 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:03,919 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:04,129 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:08,689 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:09,321 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:09,338 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:09,735 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:13,697 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:14,384 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:14,403 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:14,759 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:18,705 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:18,933 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:18,952 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:19,198 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:23,716 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:24,276 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:24,295 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:24,703 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:28,734 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:29,183 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:29,202 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:29,413 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:33,714 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:33,930 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:33,947 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:34,206 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:38,719 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:38,929 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:38,947 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:39,179 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:43,726 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:43,947 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:43,963 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:44,171 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:48,649 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:28:48,731 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:48,999 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:49,017 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:49,240 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:53,749 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:53,983 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:54,000 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:54,216 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:58,755 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:58,981 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:28:58,999 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:28:59,254 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:03,728 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:04,104 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:04,123 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:04,412 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:08,737 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:08,948 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:08,966 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:09,437 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:13,736 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:14,066 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:14,084 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:14,358 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:18,741 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:19,805 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:19,826 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:20,216 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:23,751 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:23,969 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:23,987 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:24,224 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:28,756 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:28,974 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:28,994 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:29,222 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:33,736 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:34,208 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:34,224 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:34,618 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:38,741 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:38,962 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:38,982 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:39,192 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:43,749 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:44,015 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:44,035 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:44,277 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:48,683 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:29:48,772 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:49,004 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:49,022 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:49,243 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:53,771 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:53,989 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:54,007 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:54,216 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:58,777 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:58,987 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:29:59,006 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:29:59,225 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:30:48,725 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:31:48,774 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:32:48,792 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:33:48,827 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:34:48,845 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:35:48,886 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:36:48,934 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:37:48,971 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:38:49,023 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:39:49,058 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:40:49,088 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:41:49,141 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:42:49,200 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:43:49,229 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:44:49,281 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:45:04,898 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:45:05,159 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:45:09,368 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:45:09,580 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:45:14,368 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:45:14,581 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:45:19,393 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:45:19,609 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:45:24,412 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:45:24,626 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:45:29,367 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:45:29,576 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:45:34,371 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:45:34,583 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:45:39,377 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:45:39,587 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:45:44,377 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:45:44,677 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:45:49,318 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:45:49,381 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:45:49,696 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:45:54,387 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:45:54,720 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:45:59,374 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:45:59,586 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:46:04,387 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:46:04,597 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:46:09,382 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:46:09,586 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:46:14,401 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:46:14,609 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:46:19,691 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:46:20,013 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:46:24,697 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:46:25,035 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:46:32,278 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:46:32,307 - freqtrade.exchange.common - WARNING - fetch_l2_order_book() returned exception: "Could not get order book due to NetworkError. Message: bybit GET https://api.bybit.com/v2/public/orderBook/L2?symbol=ETHUSD"
+2021-08-12 06:46:32,310 - freqtrade.exchange.common - WARNING - retrying fetch_l2_order_book() still for 4 times
+2021-08-12 06:46:32,798 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:46:35,807 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:46:36,296 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:46:40,828 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:46:41,056 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:46:46,104 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:46:46,407 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:46:50,784 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 06:46:51,138 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:46:51,460 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:46:56,162 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 06:46:56,531 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 06:55:58,087 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 07:16:40,467 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 07:22:56,645 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 08:23:08,797 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 10:23:32,984 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 10:23:33,020 - freqtrade.exchange.exchange - ERROR - Could not reload markets.
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.9/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.9/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 568, in fetch
+    response = self.session.request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 344, in reload_markets
+    self._markets = self._api.load_markets(reload=True)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 1363, in load_markets
+    markets = self.fetch_markets(params)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/bybit.py", line 410, in fetch_markets
+    response = self.v2PublicGetSymbols(params)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 462, in inner
+    return entry(_self, **inner_kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 487, in request
+    return self.fetch2(path, api, method, params, headers, body)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 483, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 620, in fetch
+    raise NetworkError(details) from e
+ccxt.base.errors.NetworkError: bybit GET https://api.bybit.com/v2/public/symbols
+2021-08-12 12:24:28,271 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 12:24:28,314 - freqtrade.exchange.exchange - ERROR - Could not reload markets.
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.9/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.9/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 568, in fetch
+    response = self.session.request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 344, in reload_markets
+    self._markets = self._api.load_markets(reload=True)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 1363, in load_markets
+    markets = self.fetch_markets(params)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/bybit.py", line 410, in fetch_markets
+    response = self.v2PublicGetSymbols(params)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 462, in inner
+    return entry(_self, **inner_kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 487, in request
+    return self.fetch2(path, api, method, params, headers, body)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 483, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 620, in fetch
+    raise NetworkError(details) from e
+ccxt.base.errors.NetworkError: bybit GET https://api.bybit.com/v2/public/symbols
+2021-08-12 14:25:22,392 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 14:25:22,477 - freqtrade.exchange.exchange - ERROR - Could not reload markets.
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.9/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/ftuser/.local/lib/python3.9/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.9/http/client.py", line 1349, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.9/http/client.py", line 316, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.9/http/client.py", line 285, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 568, in fetch
+    response = self.session.request(
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/freqtrade/freqtrade/exchange/exchange.py", line 344, in reload_markets
+    self._markets = self._api.load_markets(reload=True)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 1363, in load_markets
+    markets = self.fetch_markets(params)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/bybit.py", line 410, in fetch_markets
+    response = self.v2PublicGetSymbols(params)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 462, in inner
+    return entry(_self, **inner_kwargs)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 487, in request
+    return self.fetch2(path, api, method, params, headers, body)
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 483, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+  File "/home/ftuser/.local/lib/python3.9/site-packages/ccxt/base/exchange.py", line 620, in fetch
+    raise NetworkError(details) from e
+ccxt.base.errors.NetworkError: bybit GET https://api.bybit.com/v2/public/symbols
+2021-08-12 14:49:49,619 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:03:19,185 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:04:19,370 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:05:04,971 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:05:05,233 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:05:09,491 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:05:10,080 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:05:14,546 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:05:14,785 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:05:19,381 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:05:19,541 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:05:19,783 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:05:24,477 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:05:24,689 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:05:29,476 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:05:29,728 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:05:34,494 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:05:34,771 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:05:39,533 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:05:39,765 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:05:44,497 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:05:44,755 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:05:49,465 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:05:49,684 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:05:54,521 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:05:54,756 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:05:59,503 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:05:59,761 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:06:04,484 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:06:04,698 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:06:09,489 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:06:09,699 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:06:14,534 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:06:15,092 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:06:19,399 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:06:19,509 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:06:19,722 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:06:24,474 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:06:24,682 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:06:29,512 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:06:29,730 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:06:34,495 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:06:34,742 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:06:39,499 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:06:39,751 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:06:44,502 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:06:44,715 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:06:49,482 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:06:49,736 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:06:54,515 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:06:54,754 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:06:59,492 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:06:59,703 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:07:04,541 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:07:04,763 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:07:09,502 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:07:09,732 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:07:14,522 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:07:15,093 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:07:19,422 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:07:19,494 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:07:19,728 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:07:24,501 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:07:24,766 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:07:29,511 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:07:29,954 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:07:34,518 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:07:34,736 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:07:39,534 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:07:39,752 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:07:44,526 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:07:44,743 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:07:49,506 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:07:49,731 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:07:54,504 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:07:54,726 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:07:59,515 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:07:59,801 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:08:04,593 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:08:04,853 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:08:09,519 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:08:09,733 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:08:14,538 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:08:14,752 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:08:19,437 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:08:19,617 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:08:19,877 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:08:24,518 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:08:24,743 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:08:29,519 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:08:29,740 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:08:34,538 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:08:34,754 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:08:39,544 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:08:39,763 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:08:44,555 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:08:44,788 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:08:49,564 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:08:49,824 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:08:54,509 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:08:54,719 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:08:59,529 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:08:59,759 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:09:04,540 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:09:04,773 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:09:09,536 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:09:09,767 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:09:14,557 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:09:14,765 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:09:19,448 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:09:19,528 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:09:19,752 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:09:24,550 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:09:24,966 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:09:29,532 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:09:30,218 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:09:34,563 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:09:34,790 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:09:39,560 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:09:39,772 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:09:44,563 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:09:45,021 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:09:49,598 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:09:49,828 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:09:54,565 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:09:54,898 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:09:59,537 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:09:59,744 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:10:19,458 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:11:19,471 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:12:19,485 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:13:19,504 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:14:19,521 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:15:19,538 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:16:19,556 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:17:19,563 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:18:19,575 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:19:19,591 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:20:19,604 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:21:19,658 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:22:19,668 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:23:19,670 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:24:19,680 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:25:05,298 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:25:05,505 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:25:09,769 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:25:09,992 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:25:14,750 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:25:14,957 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:25:19,681 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:25:19,742 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:25:19,971 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:25:24,748 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:25:24,957 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:25:30,193 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:25:30,402 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:25:34,756 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:25:35,000 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:25:39,770 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:25:40,006 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:25:44,747 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:25:44,977 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:25:49,752 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:25:49,977 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:25:54,767 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:25:54,979 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:25:59,764 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:25:59,973 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:26:04,781 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:26:05,006 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:26:09,788 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:26:10,030 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:26:14,759 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:26:14,967 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:26:19,703 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:26:19,775 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:26:19,997 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:26:24,783 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:26:25,028 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:26:29,792 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:26:30,001 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:26:34,801 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:26:35,012 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:26:39,807 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:26:40,033 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:26:44,777 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:26:44,985 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:26:49,787 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:26:49,992 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:26:54,787 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:26:55,003 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:26:59,819 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:27:00,037 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:27:04,801 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:27:05,016 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:27:09,813 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:27:10,037 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:27:14,791 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:27:15,010 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:27:19,730 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:27:19,813 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:27:20,034 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:27:24,804 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:27:25,017 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:27:29,808 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:27:30,017 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:27:34,808 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:27:35,028 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:27:39,826 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:27:40,035 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:27:44,796 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:27:45,006 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:27:49,806 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:27:50,022 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:27:54,818 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:27:55,025 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:27:59,826 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:28:00,060 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:28:04,832 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:28:05,099 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:28:09,840 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:28:10,051 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:28:14,816 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:28:15,025 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:28:19,748 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:28:19,821 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:28:20,045 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:28:24,822 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:28:25,033 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:28:29,828 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:28:30,053 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:28:34,833 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:28:35,042 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:28:39,843 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:28:40,064 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:28:44,810 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:28:45,034 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:28:49,816 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:28:50,027 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:28:54,828 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:28:55,057 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:28:59,832 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:29:00,062 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:29:04,833 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:29:05,073 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:29:09,836 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:29:10,052 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:29:14,809 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:29:15,015 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:29:19,750 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:29:19,816 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:29:20,018 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:29:24,824 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:29:25,047 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:29:29,824 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:29:30,044 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:29:34,832 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:29:35,057 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:29:39,845 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:29:40,075 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:29:44,807 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:29:45,018 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:29:49,821 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:29:50,042 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:29:54,814 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:29:55,020 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:29:59,827 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 15:30:00,058 - freqtrade.wallets - WARNING - Minimum stake amount > available balance.
+2021-08-12 15:30:19,755 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:31:19,802 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:32:19,836 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:33:19,847 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:34:19,870 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:35:19,890 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:36:19,898 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:37:19,908 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:38:19,924 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:39:19,929 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:40:19,939 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:41:19,948 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:42:19,967 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:43:19,969 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:44:19,991 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:45:20,002 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:46:20,008 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:47:20,018 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:48:20,055 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:49:20,080 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:50:20,090 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:51:20,117 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:52:20,204 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:53:20,259 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:54:20,296 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:55:20,357 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:56:20,404 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:57:20,452 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:58:20,509 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 15:59:20,549 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 16:00:20,565 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 16:01:20,575 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 16:02:20,594 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 16:03:25,594 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='2021.7', state='RUNNING'
+2021-08-12 16:09:29,549 - freqtrade.loggers - INFO - Verbosity set to 0
+2021-08-12 16:09:29,550 - freqtrade.configuration.configuration - INFO - Runmode set to dry_run.
+2021-08-12 16:09:29,551 - freqtrade.configuration.configuration - INFO - Parameter --db-url detected ...
+2021-08-12 16:09:29,553 - freqtrade.configuration.configuration - INFO - Dry run is enabled
+2021-08-12 16:09:29,554 - freqtrade.configuration.configuration - INFO - Using DB: "sqlite:////freqtrade/user_data/tradesv3.sqlite"
+2021-08-12 16:09:29,556 - freqtrade.configuration.configuration - INFO - Using max_open_trades: 3 ...
+2021-08-12 16:09:29,623 - freqtrade.configuration.configuration - INFO - Using user-data directory: /freqtrade/user_data ...
+2021-08-12 16:09:29,624 - freqtrade.configuration.configuration - INFO - Using data directory: /freqtrade/user_data/data/bybit ...
+2021-08-12 16:09:29,625 - freqtrade.configuration.check_exchange - INFO - Checking exchange...
+2021-08-12 16:09:29,633 - freqtrade.configuration.check_exchange - WARNING - Exchange "bybit" is known to the the ccxt library, available for the bot, but not officially supported by the Freqtrade development team. It may work flawlessly (please report back) or have serious issues. Use it at your own discretion.
+2021-08-12 16:09:29,636 - freqtrade.configuration.configuration - INFO - Using pairlist from configuration.
+2021-08-12 16:09:29,637 - freqtrade.freqtradebot - INFO - Starting freqtrade docker-e03784d9
+2021-08-12 16:09:29,668 - freqtrade.resolvers.iresolver - INFO - Using resolved strategy SampleStrategy from '/freqtrade/user_data/strategies/sample_strategy.py'...
+2021-08-12 16:09:29,673 - freqtrade.strategy.hyper - INFO - Found no parameter file.
+2021-08-12 16:09:29,676 - freqtrade.strategy.hyper - INFO - No params for buy found, using default values.
+2021-08-12 16:09:29,679 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): buy_rsi = 30
+2021-08-12 16:09:29,682 - freqtrade.strategy.hyper - INFO - No params for sell found, using default values.
+2021-08-12 16:09:29,685 - freqtrade.strategy.hyper - INFO - Strategy Parameter(default): sell_rsi = 70
+2021-08-12 16:09:29,687 - freqtrade.strategy.hyper - INFO - No params for protection found, using default values.
+2021-08-12 16:09:29,689 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'timeframe' with value in config file: 5m.
+2021-08-12 16:09:29,692 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_currency' with value in config file: USD.
+2021-08-12 16:09:29,695 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'stake_amount' with value in config file: 0.1.
+2021-08-12 16:09:29,697 - freqtrade.resolvers.strategy_resolver - INFO - Override strategy 'unfilledtimeout' with value in config file: {'buy': 10, 'sell': 30, 'unit': 'minutes'}.
+2021-08-12 16:09:29,699 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using minimal_roi: {'60': 0.01, '30': 0.02, '0': 0.04}
+2021-08-12 16:09:29,702 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using timeframe: 5m
+2021-08-12 16:09:29,704 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stoploss: -0.1
+2021-08-12 16:09:29,705 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop: False
+2021-08-12 16:09:29,707 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_stop_positive_offset: 0.0
+2021-08-12 16:09:29,710 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using trailing_only_offset_is_reached: False
+2021-08-12 16:09:29,713 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_custom_stoploss: False
+2021-08-12 16:09:29,715 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using process_only_new_candles: False
+2021-08-12 16:09:29,718 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_types: {'buy': 'limit', 'sell': 'limit', 'stoploss': 'market', 'stoploss_on_exchange': False}
+2021-08-12 16:09:29,719 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using order_time_in_force: {'buy': 'gtc', 'sell': 'gtc'}
+2021-08-12 16:09:29,721 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_currency: USD
+2021-08-12 16:09:29,723 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using stake_amount: 0.1
+2021-08-12 16:09:29,725 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using protections: []
+2021-08-12 16:09:29,727 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using startup_candle_count: 30
+2021-08-12 16:09:29,729 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using unfilledtimeout: {'buy': 10, 'sell': 30, 'unit': 'minutes'}
+2021-08-12 16:09:29,730 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using use_sell_signal: True
+2021-08-12 16:09:29,732 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_only: False
+2021-08-12 16:09:29,735 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_roi_if_buy_signal: False
+2021-08-12 16:09:29,737 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using sell_profit_offset: 0.0
+2021-08-12 16:09:29,738 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using disable_dataframe_checks: False
+2021-08-12 16:09:29,741 - freqtrade.resolvers.strategy_resolver - INFO - Strategy using ignore_buying_expired_candle_after: 0
+2021-08-12 16:09:29,743 - freqtrade.configuration.config_validation - INFO - Validating configuration ...
+2021-08-12 16:09:29,748 - freqtrade.exchange.exchange - INFO - Instance is running with dry_run enabled
+2021-08-12 16:09:29,751 - freqtrade.exchange.exchange - INFO - Using CCXT 1.54.74
+2021-08-12 16:09:29,753 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2021-08-12 16:09:29,761 - freqtrade.exchange.exchange - INFO - Applying additional ccxt config: {'enableRateLimit': True}
+2021-08-12 16:09:29,769 - freqtrade.exchange.exchange - INFO - Using Exchange "Bybit"
+2021-08-12 16:09:30,546 - freqtrade.resolvers.exchange_resolver - INFO - Using resolved exchange 'Bybit'...
+2021-08-12 16:09:30,590 - freqtrade.persistence.migrations - INFO - Running database migration for trades - backup: trades_bak0
+2021-08-12 16:09:30,808 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 16:09:30,810 - freqtrade.plugins.protectionmanager - INFO - No protection Handlers defined.
+2021-08-12 16:09:30,924 - freqtrade.rpc.rpc_manager - INFO - Enabling rpc.api_server
+2021-08-12 16:09:31,345 - freqtrade.rpc.api_server.webserver - INFO - Starting HTTP Server at 0.0.0.0:8080
+2021-08-12 16:09:31,348 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - Local Rest Server listening to external connections
+2021-08-12 16:09:31,350 - freqtrade.rpc.api_server.webserver - WARNING - SECURITY WARNING - This is insecure please set to your loopback,e.g 127.0.0.1 in config.json
+2021-08-12 16:09:31,351 - freqtrade.rpc.api_server.webserver - INFO - Starting Local Rest Server.
+2021-08-12 16:09:31,367 - uvicorn.error - INFO - Started server process [1]
+2021-08-12 16:09:31,370 - uvicorn.error - INFO - Waiting for application startup.
+2021-08-12 16:09:31,373 - uvicorn.error - INFO - Application startup complete.
+2021-08-12 16:09:31,375 - uvicorn.error - INFO - Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2021-08-12 16:09:31,380 - freqtrade.resolvers.iresolver - INFO - Using resolved pairlist StaticPairList from '/freqtrade/freqtrade/plugins/pairlist/StaticPairList.py'...
+2021-08-12 16:09:31,382 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': status, 'status': 'running'}
+2021-08-12 16:09:31,384 - freqtrade.worker - INFO - Changing state to: RUNNING
+2021-08-12 16:09:31,386 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': warning, 'status': 'Dry run is enabled. All trades are simulated.'}
+2021-08-12 16:09:31,388 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "*Exchange:* `bybit`\n*Stake per trade:* `0.1 USD`\n*Minimum ROI:* `{'60': 0.01, '30': 0.02, '0': 0.04}`\n*Stoploss:* `-0.1`\n*Timeframe:* `5m`\n*Strategy:* `SampleStrategy`"}
+2021-08-12 16:09:31,390 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'type': startup, 'status': "Searching for USD pairs to buy and sell based on [{'StaticPairList': 'StaticPairList'}]"}
+2021-08-12 16:09:36,399 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-e03784d9', state='RUNNING'
+2021-08-12 16:10:06,869 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 16:10:07,090 - freqtrade.wallets - INFO - Stake amount for pair ETH/USD is too small (3543.75 < 3543.75), adjusting to 3543.75.
+2021-08-12 16:10:07,109 - freqtrade.freqtradebot - INFO - Buy signal found: about create a new trade for ETH/USD with stake_amount: 3543.75 ...
+2021-08-12 16:10:07,398 - freqtrade.wallets - INFO - Wallets synced.
+2021-08-12 16:10:07,404 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 1, 'type': buy, 'buy_tag': None, 'exchange': 'Bybit', 'pair': 'ETH/USD', 'limit': 3037.5, 'order_type': 'limit', 'stake_amount': 3543.75, 'stake_currency': 'USD', 'fiat_currency': 'USD', 'amount': 1.0, 'open_date': datetime.datetime(2021, 8, 12, 16, 10, 7, 302207), 'current_rate': 3037.5}
+2021-08-12 16:10:11,663 - freqtrade.freqtradebot - INFO - Found open order for Trade(id=1, pair=ETH/USD, amount=1.00000000, open_rate=3037.50000000, open_since=2021-08-12 16:10:07)
+2021-08-12 16:10:11,706 - freqtrade.freqtradebot - INFO - Fee for Trade Trade(id=1, pair=ETH/USD, amount=1.00000000, open_rate=3037.50000000, open_since=2021-08-12 16:10:07) [buy]: -0.759375 USD - rate: -0.00025
+2021-08-12 16:10:11,707 - freqtrade.persistence.models - INFO - Updating trade (id=1) ...
+2021-08-12 16:10:11,709 - freqtrade.persistence.models - INFO - LIMIT_BUY has been fulfilled for Trade(id=1, pair=ETH/USD, amount=1.00000000, open_rate=3037.50000000, open_since=2021-08-12 16:10:07).
+2021-08-12 16:10:11,731 - freqtrade.rpc.rpc_manager - INFO - Sending rpc message: {'trade_id': 1, 'type': buy_fill, 'buy_tag': None, 'exchange': 'Bybit', 'pair': 'ETH/USD', 'open_rate': 3037.5, 'stake_amount': 3543.75, 'stake_currency': 'USD', 'fiat_currency': 'USD', 'amount': 1.0, 'open_date': datetime.datetime(2021, 8, 12, 16, 10, 7, 302207)}
+2021-08-12 16:10:36,451 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-e03784d9', state='RUNNING'
+2021-08-12 16:11:36,476 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-e03784d9', state='RUNNING'
+2021-08-12 16:12:36,495 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-e03784d9', state='RUNNING'
+2021-08-12 16:13:36,577 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-e03784d9', state='RUNNING'
+2021-08-12 16:14:36,669 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-e03784d9', state='RUNNING'
+2021-08-12 16:15:36,683 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-e03784d9', state='RUNNING'
+2021-08-12 16:16:36,700 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-e03784d9', state='RUNNING'
+2021-08-12 16:17:36,711 - freqtrade.worker - INFO - Bot heartbeat. PID=1, version='docker-e03784d9', state='RUNNING'
